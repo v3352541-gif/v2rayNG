@@ -31,8 +31,9 @@ jobs:
 
     - name: Download libv2ray
       run: |
+        mkdir -p V2rayNG/app/libs
         wget https://github.com/2dust/AndroidLibXrayLite/releases/download/2.4.0/libv2ray.aar -O V2rayNG/app/libs/libv2ray.aar
-
+    
     - name: Build Debug APK
       run: |
         cd V2rayNG
